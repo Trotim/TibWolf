@@ -1,0 +1,71 @@
+grai:
+	idle:
+		Filename: grai.shp
+		Start: 0
+	bib:
+		Filename: mbGUN.tem
+		UseTilesetExtension: true
+		TilesetOverrides:
+			WINTER: TEMPERAT
+			JUNGLE: TEMPERAT
+			SNOW: TEMPERAT
+		Length: *
+		Offset: -1,-2
+
+grai.husk:
+	idle:
+		Filename: grai.shp
+		Start: 1
+	bib:
+		Filename: mbGUN.tem
+		Length: *
+		Offset: -1,-2
+
+mtrk:
+	idle:
+		Filename: mtrk.png
+		Facings: 32
+		UseClassicFacings: True
+		AddExtension: False
+	turret:
+		Filename: mguntripod.png
+		Scale: 0.5
+		Facings: 32
+		UseClassicFacings: True
+	muzzle:
+		Filename: minigun.shp
+		Length: 6
+		Facings: 8
+	icon:
+		Filename: jeepicnh.tem
+		AddExtension: False
+
+shotgunner:
+	Inherits: e1
+
+sensortower:
+	Defaults:
+		Filename: sensortower.png
+		Offset: 2,4
+	make:
+		Filename: sensortower_make.png
+		Length: *
+		Tick: 80
+		Offset: 3,4
+	idle:
+		Start: 0
+		Length: 16
+		Tick: 100
+	damaged-idle:
+		Start: 16
+		Length: 16
+		Tick: 100
+	bib:
+		Filename: mbGUN.tem
+		UseTilesetExtension: true
+		Length: *
+		Offset: 0,1
+	icon:
+		Filename: jeepicnh.tem
+		AddExtension: False
+		Offset: 0,0

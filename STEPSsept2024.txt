@@ -1,0 +1,34 @@
+It helps to keep it 8bit PNG
+
+Render in Blender using template (solid black shadow)
+Export PNG RGBA
+Aseprite to remove solid blue background
+Aseprite to change shadow to alpha 140
+Aseprite to export as sprite sheet:
+	- sheet type Packed
+	- trim sprites
+	- export json (this gives us the frame size w & h)
+
+Make a nameofsheet.yaml defining frame size manually of format:
+
+FrameSize: 30,27
+FrameAmount: 32
+Offset: 0,0
+Author: Trotim
+License: 
+
+Copy png and yaml to root folder
+Drag png onto embedpng.cmd in root folder
+Move png and yaml to final destination folder
+
+Define sequences.yaml like so:
+unitname:
+	idle: nameofsheet.png
+		Facings: 32
+        	AddExtension: False
+
+In rules.yaml, make sure unit has
+    RenderSprites:
+        Image: nameofsheet
+
+Pink player color gets remapped based on PlayerColorShift in palettes.yaml

@@ -1,0 +1,29 @@
+Render in Blender using template (solid black shadow)
+
+Aseprite to change shadow to alpha 140
+
+Aseprite to export as sprite sheet
+
+Make a nameofsheet.yaml defining frame size manually (can use Aseprite .json to check size first)
+
+use OpenRA.Utility.exe in Powershell with command ".\OpenRA.Utility.exe cnc --png-sheet-import nameofsheet.png"
+to embed frame size information
+
+Define sequence like so:
+unitname:
+	idle: nameofsheet.png
+		Facings: 32
+        	AddExtension: False
+
+For player colors, add extra sequences:
+unitname-factionname:
+    Inherits: unitname
+    idle: nameofsheet-factionname.png
+
+In rules.yaml, make sure unit has
+    RenderSprites:
+        Image: nameofsheet
+        FactionImages:
+            factionname: nameofsheet-factionname
+
+There may be a better way to do faction colors...

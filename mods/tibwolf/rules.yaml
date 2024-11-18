@@ -1,0 +1,202 @@
+grai:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Grain Silo
+	Health:
+		HP: 10000
+	Building:
+		Footprint: _ x
+		Dimensions: 1,2
+	WithBuildingBib:
+	HitShape:
+		Type: Rectangle
+			TopLeft: -512, -512
+			BottomRight: 512, 756
+	Selectable:
+		Bounds: 1024,1536, 0,256
+		DecorationBounds: 1024,1536, 0,256
+	Explodes:
+		Weapon: TiberiumExplosion
+	SpawnActorOnDeath:
+		Actor: grai.Husk
+
+grai.Husk:
+	Inherits: ^CivBuildingHusk
+	Building:
+		Footprint: _ x
+		Dimensions: 1,2
+	WithBuildingBib:
+	Tooltip:
+		Name: Grain Silo (Destroyed)
+
+mtrk:
+	Inherits: ^Vehicle
+	Inherits@EXPERIENCE: ^GainsExperience
+	Inherits@CLOAK: ^AcceptsCloakCrate
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	RenderSprites:
+		Image: mtrk
+		PlayerPalette: playerremap
+	Buildable:
+		Queue: Vehicle.GDI,Vehicle.Nod
+		BuildPaletteOrder: 35
+		Prerequisites: vehicleproduction
+		Description: Sturdy anti-infantry vehicle.\n Strong vs Infantry\n Weak vs Tanks
+	Valued:
+		Cost: 500
+	Tooltip:
+		Name: Monster Truck
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
+	Health:
+		HP: 30000
+	Repairable:
+		HpPerStep: 3000
+	Armor:
+		Type: Light
+	Mobile:
+		Speed: 116
+	RevealsShroud:
+		Range: 8c0
+	Turreted:
+		TurnSpeed: 40
+		Offset: -256,0,256
+	Armament:
+		Weapon: MachineGunMTruck
+		LocalOffset: 171,0,85
+		MuzzleSequence: muzzle
+	AttackMove:
+		Voice: Attack
+	AttackTurreted:
+		Voice: Attack
+	WithMuzzleOverlay:
+	WithFacingSpriteBody:
+	WithSpriteTurret:
+	WithDamageOverlay:
+		Palette: terrain
+    SpawnActorOnDeath:
+		Actor: mtrk.Husk
+		OwnerType: InternalName
+		EffectiveOwnerFromOwner: true
+        
+mtrk.Husk:
+    Inherits: ^LightHusk
+	Tooltip:
+		Name: Monster Truck (Destroyed)
+	TransformOnCapture:
+		IntoActor: mtrk
+	RenderSprites:
+		Image: mtrk
+        PlayerPalette: playerremap
+    WithIdleOverlay@Burns:
+		Palette: terrain
+
+Shotgunner:
+	Inherits: E1
+	RenderSprites:
+		Image: E1
+	Valued:
+		Cost: 150
+	Tooltip:
+		Name: Shotgunner
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
+	Buildable:
+		BuildPaletteOrder: 10
+		Prerequisites: barracks
+		Queue: Infantry.GDI, Infantry.Nod
+		Description: General-purpose infantry.\n Strong vs Infantry\n Weak vs Vehicles
+	Mobile:
+		Speed: 54
+	Health:
+		HP: 5000
+	AutoTarget:
+		ScanRadius: 4
+	Armament:
+		Weapon: Shotgun
+	AttackFrontal:
+		Voice: Attack
+		FacingTolerance: 0
+	AttackMove:
+		Voice: Attack
+	WithInfantryBody:
+		IdleSequences: idle1,idle2,idle3,idle4
+		DefaultAttackSequence: shoot
+
+SensorTower:
+	Inherits: ^TechBuilding
+	RenderSprites:
+		Image: sensortower
+		PlayerPalette: playerremap
+	Tooltip:
+		Name: Sensor Tower
+	Health:
+		HP: 40000
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 1000
+		Prerequisites: ~disabled
+	Valued:
+		Cost: 0
+	RevealsShroud:
+		Range: 13c0
+	DetectCloaked:
+		Range: 13c0
+	RenderDetectionCircle:
+	TooltipDescription@ally:
+		Description: Provides vision.
+		ValidRelationships: Ally
+	TooltipDescription@other:
+		Description: Capture to gain visual range.
+		ValidRelationships: Neutral, Enemy
+	Building:
+		Footprint: _ x
+		Dimensions: 1,2
+	WithBuildingBib:
+	HitShape:
+		Type: Rectangle
+			TopLeft: -512, -512
+			BottomRight: 512, 756
+	Selectable:
+		Bounds: 1024,1536, 0,256
+		DecorationBounds: 1024,1536, 0,256
+
+SensorTower.Buildable:
+    Inherits: ^BaseBuilding
+    RenderSprites:
+		Image: sensortower
+		PlayerPalette: playerremap
+	Tooltip:
+		Name: Sensor Tower
+	Health:
+		HP: 40000
+	Buildable:
+		Queue: Building.GDI, Building.Nod
+		BuildPaletteOrder: 10
+		Prerequisites: anypower
+	Valued:
+		Cost: 500
+	RevealsShroud:
+		Range: 13c0
+	DetectCloaked:
+		Range: 13c0
+	RenderDetectionCircle:
+	TooltipDescription@ally:
+		Description: Provides vision.
+		ValidRelationships: Ally
+	TooltipDescription@other:
+		Description: Capture to gain visual range.
+		ValidRelationships: Neutral, Enemy
+	Building:
+		Footprint: _ x
+		Dimensions: 1,2
+	WithBuildingBib:
+		HasMinibib: True
+	-WithDeathAnimation:
+	HitShape:
+		Type: Rectangle
+			TopLeft: -512, 0
+			BottomRight: 512, 1024
+	Selectable:
+		Bounds: 1024,2048, 0,0
+		DecorationBounds: 1024,2048, 0,0
