@@ -28,7 +28,7 @@ mtrk:
 		UseClassicFacings: True
 		AddExtension: False
 	turret:
-		Filename: mguntripod.png
+		Filename: mguntripodnov2024.png
 		Scale: 0.5
 		Facings: 32
 		UseClassicFacings: True
