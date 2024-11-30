@@ -69,3 +69,28 @@ sensortower:
 		Filename: jeepicnh.tem
 		AddExtension: False
 		Offset: 0,0
+
+catapult:
+	Defaults:
+		Filename: catapult.png
+		Facings: -8
+		Stride: 12
+		Tick: 100
+	idle:
+		Start: 0
+		Length: 1
+	move:
+		Start: 0
+		Length: 4
+	shoot:
+		Start: 4
+		Length: 8
+	icon:
+		Filename: artyicnh.tem
+		Facings: 1
+
+rock:
+	idle:
+		Filename: rock.png
+		Length: *
+		Tick: 80

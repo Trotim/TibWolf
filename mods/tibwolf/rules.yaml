@@ -74,21 +74,21 @@ mtrk:
 	WithSpriteTurret:
 	WithDamageOverlay:
 		Palette: terrain
-    SpawnActorOnDeath:
+	SpawnActorOnDeath:
 		Actor: mtrk.Husk
 		OwnerType: InternalName
 		EffectiveOwnerFromOwner: true
-        
+		
 mtrk.Husk:
-    Inherits: ^LightHusk
+	Inherits: ^LightHusk
 	Tooltip:
 		Name: Monster Truck (Destroyed)
 	TransformOnCapture:
 		IntoActor: mtrk
 	RenderSprites:
 		Image: mtrk
-        PlayerPalette: playerremap
-    WithIdleOverlay@Burns:
+		PlayerPalette: playerremap
+	WithIdleOverlay@Burns:
 		Palette: terrain
 
 Shotgunner:
@@ -162,8 +162,8 @@ SensorTower:
 		DecorationBounds: 1024,1536, 0,256
 
 SensorTower.Buildable:
-    Inherits: ^BaseBuilding
-    RenderSprites:
+	Inherits: ^BaseBuilding
+	RenderSprites:
 		Image: sensortower
 		PlayerPalette: playerremap
 	Tooltip:
@@ -200,3 +200,54 @@ SensorTower.Buildable:
 	Selectable:
 		Bounds: 1024,2048, 0,0
 		DecorationBounds: 1024,2048, 0,0
+
+catapult:
+	Inherits: ^Vehicle
+	Inherits@EXPERIENCE: ^GainsExperience
+	Inherits@CLOAK: ^AcceptsCloakCrate
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	RenderSprites:
+		Image: catapult
+		PlayerPalette: playerremap
+	Buildable:
+		Queue: Vehicle.GDI,Vehicle.Nod
+		BuildPaletteOrder: 35
+		Prerequisites: vehicleproduction
+		Description: Long range siege weapon.\n Strong vs Buildings\n Weak vs mobile
+	Valued:
+		Cost: 500
+	Tooltip:
+		Name: Catapult
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
+	Health:
+		HP: 30000
+	Repairable:
+		HpPerStep: 3000
+	Armor:
+		Type: Light
+	Mobile:
+		Speed: 72
+	RevealsShroud:
+		Range: 8c0
+	Armament:
+		Weapon: CatapultRock
+		LocalOffset: 0,0,756
+		FireDelay: 7
+	AttackSounds:
+		Sounds: si_catapult.wav
+	AttackFrontal:
+		TargetFrozenActors: True
+		ForceFireIgnoresActors: True
+		Voice: Attack
+		FacingTolerance: 0
+	AttackMove:
+		Voice: Attack
+	WithMuzzleOverlay:
+	WithFacingSpriteBody:
+	WithMoveAnimation:
+		MoveSequence: move
+	WithAttackAnimation:
+		Sequence: shoot
+	WithDamageOverlay:
+		Palette: terrain

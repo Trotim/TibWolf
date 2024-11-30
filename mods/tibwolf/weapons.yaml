@@ -36,3 +36,32 @@ Shotgun:
 	Warhead@5Eff: CreateEffect
 		Explosions: piff
 		Inaccuracy: 512
+
+CatapultRock:
+	Inherits: ^BallisticWeapon
+	ReloadDelay: 120
+	Range: 11c0
+	MinRange: 3c0
+	Report: ""
+	TargetActorCenter: true
+	Projectile: Bullet
+		Speed: 192
+		Blockable: false
+		LaunchAngle: 90
+		Inaccuracy: 1c256
+		ContrailStartWidth: 128
+		ContrailLength: 30
+		Image: rock
+	Warhead@1Dam: SpreadDamage
+		Spread: 341
+		Damage: 20000
+		Versus:
+			None: 140
+			Wood: 100
+			Light: 112
+			Heavy: 75
+			Concrete: 75
+		DamageTypes: Prone50Percent, TriggerProne, SmallExplosionDeath
+	Warhead@3Eff: CreateEffect
+		Explosions: poof
+		ImpactSounds: xplosml2.aud
