@@ -232,12 +232,22 @@ catapult:
 		Range: 8c0
 	Armament:
 		Weapon: CatapultRock
+		Name: primary
 		LocalOffset: 0,0,756
 		FireDelay: 7
 		PauseOnCondition: moving
+		RequiresCondition: rank-veteran < 3
+	Armament@RANK-ELITE:
+		Weapon: CatapultRockElite
+		Name: elite
+		LocalOffset: 0,0,756
+		FireDelay: 7
+		PauseOnCondition: moving
+		RequiresCondition: rank-veteran >= 3
 	AttackSounds:
 		Sounds: si_catapult.wav
 	AttackFrontal:
+		Armaments: primary, elite
 		TargetFrozenActors: True
 		ForceFireIgnoresActors: True
 		Voice: Attack
@@ -253,5 +263,10 @@ catapult:
 		MoveSequence: move
 	WithAttackAnimation:
 		Sequence: shoot
+		RequiresCondition: rank-veteran < 3
+	WithAttackAnimation@RANK-ELITE:
+		Armament: elite
+		Sequence: shoot
+		RequiresCondition: rank-veteran >= 3
 	WithDamageOverlay:
 		Palette: terrain
