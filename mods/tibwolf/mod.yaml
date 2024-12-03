@@ -37,6 +37,7 @@ Packages:
 	$tibwolf: tibwolf
 	tibwolf|bits/music
 	tibwolf|bits/sfx
+	tibwolf|bits/sprites
 	tibwolf|audio
 
 MapFolders:
