@@ -234,6 +234,7 @@ catapult:
 		Weapon: CatapultRock
 		LocalOffset: 0,0,756
 		FireDelay: 7
+		PauseOnCondition: moving
 	AttackSounds:
 		Sounds: si_catapult.wav
 	AttackFrontal:
@@ -243,6 +244,9 @@ catapult:
 		FacingTolerance: 0
 	AttackMove:
 		Voice: Attack
+	GrantConditionOnMovement@MOVING:
+		ValidMovementTypes: Horizontal, Vertical, Turn
+		Condition: moving
 	WithMuzzleOverlay:
 	WithFacingSpriteBody:
 	WithMoveAnimation:
