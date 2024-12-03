@@ -47,7 +47,7 @@ CatapultRock:
 	Projectile: Bullet
 		Speed: 192
 		Blockable: false
-		LaunchAngle: 90
+		LaunchAngle: 128
 		Inaccuracy: 1c256
 		ContrailStartWidth: 128
 		ContrailLength: 30
