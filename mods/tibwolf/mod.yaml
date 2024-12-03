@@ -36,6 +36,7 @@ Packages:
 	cnc|uibits
 	$tibwolf: tibwolf
 	tibwolf|bits/music
+	tibwolf|bits/sfx
 	tibwolf|audio
 
 MapFolders:
@@ -60,7 +61,7 @@ Rules:
 	cnc|rules/aircraft.yaml
 	cnc|rules/husks.yaml
 	tibwolf|rules.yaml
-	tibwolf|palettes.yaml
+	tibwolf|palettes/palettes.yaml
 
 Sequences:
 	cnc|sequences/structures.yaml
