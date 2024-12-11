@@ -86,7 +86,7 @@ catapult:
 		Start: 4
 		Length: 8
 	icon:
-		Filename: artyicnh.tem
+		Filename: catapult_icon.png
 		Facings: 1
 
 rock:
