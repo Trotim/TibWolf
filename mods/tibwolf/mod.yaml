@@ -198,35 +198,35 @@ ChromeMetrics:
 
 Fonts:
 	Tiny:
-		Font: tibwolf|arial.ttf
+		Font: tibwolf|deltablock.ttf
 		Size: 10
 		Ascender: 8
 	TinyBold:
-		Font: tibwolf|arialbd.ttf
+		Font: tibwolf|deltablock.ttf
 		Size: 10
 		Ascender: 8
 	Small:
-		Font: tibwolf|arial.ttf
+		Font: tibwolf|deltablock.ttf
 		Size: 12
 		Ascender: 9
 	Regular:
-		Font: tibwolf|arial.ttf
+		Font: tibwolf|deltablock.ttf
 		Size: 14
 		Ascender: 11
 	Bold:
-		Font: tibwolf|arialbd.ttf
+		Font: tibwolf|deltablock.ttf
 		Size: 14
 		Ascender: 11
 	MediumBold:
-		Font: tibwolf|arialbd.ttf
+		Font: tibwolf|deltablock.ttf
 		Size: 18
 		Ascender: 14
 	BigBold:
-		Font: tibwolf|arialbd.ttf
+		Font: tibwolf|deltablock.ttf
 		Size: 24
 		Ascender: 18
 	Title:
-		Font: tibwolf|arialbd.ttf
+		Font: tibwolf|deltablock.ttf
 		Size: 32
 		Ascender: 24
 
