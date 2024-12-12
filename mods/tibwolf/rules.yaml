@@ -78,7 +78,7 @@ mtrk:
 		Actor: mtrk.Husk
 		OwnerType: InternalName
 		EffectiveOwnerFromOwner: true
-		
+
 mtrk.Husk:
 	Inherits: ^LightHusk
 	Tooltip:
@@ -137,7 +137,7 @@ SensorTower:
 		BuildPaletteOrder: 1000
 		Prerequisites: ~disabled
 	Valued:
-		Cost: 0
+		Cost: 400
 	RevealsShroud:
 		Range: 13c0
 	DetectCloaked:
@@ -175,7 +175,7 @@ SensorTower.Buildable:
 		BuildPaletteOrder: 10
 		Prerequisites: anypower
 	Valued:
-		Cost: 500
+		Cost: 400
 	RevealsShroud:
 		Range: 13c0
 	DetectCloaked:
@@ -214,6 +214,8 @@ catapult:
 		BuildPaletteOrder: 35
 		Prerequisites: vehicleproduction
 		Description: Long range siege weapon.\n Strong vs Buildings\n Weak vs mobile
+		IconPalette: playerremap
+		IconPaletteIsPlayerPalette: true
 	Valued:
 		Cost: 500
 	Tooltip:
