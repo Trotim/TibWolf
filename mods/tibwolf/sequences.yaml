@@ -76,6 +76,7 @@ catapult:
 		Facings: -8
 		Stride: 12
 		Tick: 100
+		Scale: 0.7
 	idle:
 		Start: 0
 		Length: 1
