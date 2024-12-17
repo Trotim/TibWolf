@@ -70,3 +70,18 @@ CatapultRockElite:
 	Inherits: CatapultRock
 	Burst: 3
 	BurstDelays: 0
+	
+KnightSword:
+	ReloadDelay: 30
+	Range: 1c512
+	Report: si_swordhit1.wav, si_swordhit2.wav, si_swordhit3.wav
+	Projectile: InstantHit
+	Warhead@1Dam: SpreadDamage
+		Damage: 5000
+		Versus:
+			None: 100
+			Wood: 50
+			Light: 50
+			Heavy: 20
+			Concrete: 20
+		DamageTypes: Prone50Percent, TriggerProne, RippedApartDeath

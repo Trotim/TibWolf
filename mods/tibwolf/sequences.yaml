@@ -75,8 +75,8 @@ catapult:
 		Filename: catapult.png
 		Facings: -8
 		Stride: 12
-		Tick: 100
-		Scale: 0.7
+		Tick: 80
+		Scale: 1.0
 	idle:
 		Start: 0
 		Length: 1
@@ -95,3 +95,26 @@ rock:
 		Filename: rock.png
 		Length: *
 		Tick: 80
+
+knight:
+	Defaults:
+		Filename: knight.png
+		Facings: -8
+		Stride: 13
+		Tick: 80
+		Scale: 1.0
+	stand:
+		Start: 0
+		Length: 1
+	run:
+		Start: 1
+		Length: 6
+	attack:
+		Start: 7
+		Length: 4
+	die:
+		Start: 11
+		Length: 2
+	icon:
+		Filename: catapult_icon.png
+		Facings: 1

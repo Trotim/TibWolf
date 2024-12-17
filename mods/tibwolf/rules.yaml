@@ -223,13 +223,13 @@ catapult:
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
-		HP: 30000
+		HP: 90000
 	Repairable:
 		HpPerStep: 3000
 	Armor:
-		Type: Light
+		Type: Heavy
 	Mobile:
-		Speed: 72
+		Speed: 48
 	RevealsShroud:
 		Range: 8c0
 	Armament:
@@ -272,3 +272,65 @@ catapult:
 		RequiresCondition: rank-veteran >= 3
 	WithDamageOverlay:
 		Palette: terrain
+
+knight:
+	Inherits@1: ^ExistsInWorld
+	Inherits@2: ^SpriteActor
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@selection: ^SelectableCombatUnit
+	Inherits@handicaps: ^PlayerHandicaps
+	Huntable:
+	OwnerLostAction:
+		Action: Kill
+	Health:
+		HP: 45000
+	Armor:
+		Type: Light
+	Buildable:
+		Queue: Infantry.GDI, Infantry.Nod
+		BuildPaletteOrder: 15
+		Prerequisites: ~disabled
+		IconPalette: playerremap
+		IconPaletteIsPlayerPalette: true
+	Valued:
+		Cost: 150
+	Tooltip:
+		Name: Knight
+	RevealsShroud:
+		Range: 6c0
+	Mobile:
+		Locomotor: critter
+		Speed: 96
+		Voice: Move
+		AlwaysTurnInPlace: true
+	Selectable:
+		Bounds: 1024, 1024
+	Targetable:
+		TargetTypes: Ground, Creep
+	HiddenUnderFog:
+	RenderSprites:
+		PlayerPalette: playerremap
+	QuantizeFacingsFromSequence:
+		Sequence: stand
+	WithInfantryBody:
+		DefaultAttackSequence: attack
+	WithDeathAnimation:
+		UseDeathTypeSuffix: false
+		DeathSequencePalette: playerremap
+		DeathPaletteIsPlayerPalette: true
+	AutoTarget:
+		ScanRadius: 6
+	AttackMove:
+		Voice: Attack
+	AttackFrontal:
+		Voice: Attack
+		FacingTolerance: 0
+	Armament:
+		Weapon: KnightSword
+		FireDelay: 5
+	DeathSounds:
+	Voiced:
+		VoiceSet: DinoVoice
+	HitShape:
+		Type: Circle
+			Radius: 256
