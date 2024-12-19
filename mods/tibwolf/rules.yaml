@@ -289,7 +289,7 @@ knight:
 	Buildable:
 		Queue: Infantry.GDI, Infantry.Nod
 		BuildPaletteOrder: 15
-		Prerequisites: ~disabled
+		Prerequisites: barracks
 		IconPalette: playerremap
 		IconPaletteIsPlayerPalette: true
 	Valued:
@@ -334,3 +334,39 @@ knight:
 	HitShape:
 		Type: Circle
 			Radius: 256
+
+windturbine:
+	Inherits: ^BaseBuilding
+	RenderSprites:
+		Image: windturbine
+		PlayerPalette: playerremap
+	Valued:
+		Cost: 300
+	Tooltip:
+		Name: Wind Turbine
+	ProvidesPrerequisite:
+		Prerequisite: anypower
+	Buildable:
+		BuildPaletteOrder: 10
+		Prerequisites: fact
+		Queue: Building.GDI, Building.Nod
+		Description: Generates power\n Fragile
+	Building:
+		Footprint: = x
+		Dimensions: 1,2
+	HitShape:
+		Type: Rectangle
+			TopLeft: -256, 0
+			BottomRight: 256, 1024
+	Selectable:
+		Bounds: 756,2048, 0,0
+	Health:
+		HP: 30000
+	RevealsShroud:
+		Range: 4c0
+	WithBuildingBib:
+		HasMinibib: True
+	-WithDeathAnimation:
+	Power:
+		Amount: 55
+	ScalePowerWithHealth:

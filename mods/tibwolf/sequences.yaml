@@ -118,3 +118,31 @@ knight:
 	icon:
 		Filename: catapult_icon.png
 		Facings: 1
+
+windturbine:
+	Defaults:
+		Filename: windturbine.png
+	make:
+		Start: 1
+		Length: 12
+		Tick: 80
+		Offset: 0,-4
+	idle:
+		Start: 12
+		Length: 12
+		Tick: 80
+		Offset: 0,-4
+	damaged-idle:
+		Start: 24
+		Length: 12
+		Tick: 80
+		Offset: 0,-4
+	bib:
+		Filename: mbGUN.tem
+		TilesetFilenames:
+			DESERT: mbGUN.des
+		Offset: 0,4
+	icon:
+		Filename: jeepicnh.tem
+		AddExtension: False
+		Offset: 0,0
