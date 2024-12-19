@@ -1,0 +1,157 @@
+Player:
+	ModularBot@newbot:
+		Name: NewBot
+		Type: newbot
+	GrantConditionOnBotOwner@newbot:
+		Condition: enable-newbot-ai
+		Bots: newbot
+	SupportPowerBotModule:
+		RequiresCondition: enable-newbot-ai
+		Decisions:
+			Airstrike:
+				OrderName: AirstrikePowerInfoOrder
+				MinimumAttractiveness: 2000
+				Consideration@1:
+					Against: Enemy
+					Types: Vehicle, Infantry
+					Attractiveness: 3
+					TargetMetric: Value
+					CheckRadius: 2c0
+				Consideration@2:
+					Against: Ally
+					Types: Ground, Water
+					Attractiveness: -20
+					TargetMetric: Value
+					CheckRadius: 2c0
+				Consideration@3:
+					Against: Enemy
+					Types: Structure
+					Attractiveness: 1
+					TargetMetric: Value
+					CheckRadius: 2c0
+			IonCannonPower:
+				OrderName: IonCannonPowerInfoOrder
+				MinimumAttractiveness: 1000
+				FineScanRadius: 2
+				Consideration@1:
+					Against: Enemy
+					Types: Air, Tank, Vehicle, Infantry, Water
+					Attractiveness: 2
+					TargetMetric: Value
+					CheckRadius: 2c0
+				Consideration@2:
+					Against: Enemy
+					Types: Structure
+					Attractiveness: 1
+					TargetMetric: Value
+					CheckRadius: 2c0
+				Consideration@3:
+					Against: Ally
+					Types: Ground, Water
+					Attractiveness: -10
+					TargetMetric: Value
+					CheckRadius: 3c0
+			NukePower:
+				OrderName: NukePowerInfoOrder
+				MinimumAttractiveness: 3000
+				Consideration@1:
+					Against: Enemy
+					Types: Structure
+					Attractiveness: 1
+					TargetMetric: Value
+					CheckRadius: 5c0
+				Consideration@2:
+					Against: Ally
+					Types: Air, Ground, Water
+					Attractiveness: -10
+					TargetMetric: Value
+					CheckRadius: 7c0
+	HarvesterBotModule:
+		RequiresCondition: enable-newbot-ai
+		HarvesterTypes: harv
+		RefineryTypes: proc
+	BaseBuilderBotModule@newbot:
+		RequiresCondition: enable-newbot-ai
+		BuildingQueues: Building.Nod, Building.GDI
+		DefenseQueues: Defence.Nod, Defence.GDI
+		MinimumExcessPower: 30
+		MaximumExcessPower: 150
+		ExcessPowerIncrement: 30
+		ExcessPowerIncreaseThreshold: 5
+		ConstructionYardTypes: fact
+		RefineryTypes: proc
+		PowerTypes: windturbine, nuk2
+		BarracksTypes: pyle, hand
+		VehiclesFactoryTypes: weap, afld
+		ProductionTypes: pyle, hand, weap, afld, hpad
+		SiloTypes: silo
+		DefenseTypes: gtwr,gun,atwr,obli,sam
+		BuildingLimits:
+			proc: 4
+			pyle: 3
+			hand: 3
+			hq: 1
+			weap: 3
+			afld: 3
+			hpad: 0
+			eye: 1
+			tmpl: 1
+			fix: 1
+			silo: 1
+		BuildingFractions:
+			proc: 20
+			pyle: 5
+			hand: 5
+			hq: 4
+			weap: 9
+			afld: 9
+			gtwr: 5
+			gun: 5
+			atwr: 9
+			obli: 7
+			sam: 7
+			eye: 1
+			tmpl: 1
+			fix: 1
+			hpad: 2
+	BuildingRepairBotModule:
+		RequiresCondition: enable-newbot-ai
+	SquadManagerBotModule@newbot:
+		RequiresCondition: enable-newbot-ai
+		SquadSize: 15
+		ExcludeFromSquadsTypes: harv, mcv, a10
+		ConstructionYardTypes: fact
+		AirUnitsTypes: heli, orca
+		ProtectionTypes: fact, fact.gdi, fact.nod, nuke, nuk2, proc, silo, pyle, hand, afld, weap, hpad, hq, fix, eye, tmpl, gun, sam, obli, gtwr, atwr, mcv, harv, miss
+		IgnoredEnemyTargetTypes: Air
+	UnitBuilderBotModule@newbot:
+		RequiresCondition: enable-newbot-ai
+		UnitQueues: Vehicle.Nod, Vehicle.GDI, Infantry.Nod, Infantry.GDI, Aircraft.Nod, Aircraft.GDI
+		UnitsToBuild:
+			shotgunner: 65
+			e2: 25
+			e3: 40
+			e4: 15
+			e5: 15
+			harv: 10
+			mtrk: 15
+			bike: 20
+			ltnk: 25
+			ftnk: 10
+			arty: 30
+			stnk: 20
+			jeep: 5
+			mtnk: 20
+			msam: 5
+			htnk: 25
+			heli: 5
+			orca: 5
+			knight: 50
+			catapult: 15
+		UnitLimits:
+			harv: 8
+	McvManagerBotModule:
+		RequiresCondition: enable-newbot-ai
+		McvTypes: mcv
+		ConstructionYardTypes: fact
+		McvFactoryTypes: weap,afld

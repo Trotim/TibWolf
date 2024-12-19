@@ -63,6 +63,7 @@ Rules:
 	cnc|rules/husks.yaml
 	tibwolf|rules.yaml
 	tibwolf|palettes/palettes.yaml
+	tibwolf|ai.yaml
 
 Sequences:
 	cnc|sequences/structures.yaml
@@ -285,7 +286,7 @@ GameSpeeds:
 			Name: options-game-speed.fastest
 			Timestep: 20
 			OrderLatency: 6
-			
+
 WorldViewportSizes:
 	DefaultScale: 1.0
 	MaxZoomScale: 4.0
