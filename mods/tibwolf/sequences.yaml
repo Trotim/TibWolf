@@ -21,17 +21,14 @@ grai.husk:
 		Length: *
 		Offset: -1,-2
 
-mtrk:
+monstertruck:
 	idle:
-		Filename: mtrk.png
-		Facings: 32
-		UseClassicFacings: True
-		AddExtension: False
+		Filename: monstertruck.png
+		Facings: -16
 	turret:
 		Filename: mguntripodnov2024.png
 		Scale: 0.5
 		Facings: 32
-		UseClassicFacings: True
 	muzzle:
 		Filename: minigun.shp
 		Length: 6

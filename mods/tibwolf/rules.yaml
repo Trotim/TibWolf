@@ -29,13 +29,13 @@ grai.Husk:
 	Tooltip:
 		Name: Grain Silo (Destroyed)
 
-mtrk:
+MonsterTruck:
 	Inherits: ^Vehicle
 	Inherits@EXPERIENCE: ^GainsExperience
 	Inherits@CLOAK: ^AcceptsCloakCrate
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	RenderSprites:
-		Image: mtrk
+		Image: monstertruck
 		PlayerPalette: playerremap
 	Buildable:
 		Queue: Vehicle.GDI,Vehicle.Nod
@@ -75,18 +75,18 @@ mtrk:
 	WithDamageOverlay:
 		Palette: terrain
 	SpawnActorOnDeath:
-		Actor: mtrk.Husk
+		Actor: MonsterTruck.Husk
 		OwnerType: InternalName
 		EffectiveOwnerFromOwner: true
 
-mtrk.Husk:
+MonsterTruck.Husk:
 	Inherits: ^LightHusk
 	Tooltip:
 		Name: Monster Truck (Destroyed)
 	TransformOnCapture:
-		IntoActor: mtrk
+		IntoActor: MonsterTruck
 	RenderSprites:
-		Image: mtrk
+		Image: monstertruck
 		PlayerPalette: playerremap
 	WithIdleOverlay@Burns:
 		Palette: terrain
