@@ -37,6 +37,22 @@ monstertruck:
 		Filename: jeepicnh.tem
 		AddExtension: False
 
+monstertruck.husk:
+	idle:
+		Filename: monstertruck_husk.png
+		Facings: -16
+	tire:
+		Filename: tire.png
+		Facings: -8
+		Stride: 8
+
+tire:
+	idle:
+		Filename: tire.png
+		Facings: -8
+		Stride: 8
+		Length: 8
+
 shotgunner:
 	Inherits: e1
 

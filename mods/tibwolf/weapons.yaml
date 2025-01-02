@@ -65,12 +65,12 @@ CatapultRock:
 	Warhead@3Eff: CreateEffect
 		Explosions: poof
 		ImpactSounds: xplosml2.aud
-		
+
 CatapultRockElite:
 	Inherits: CatapultRock
 	Burst: 3
 	BurstDelays: 0
-	
+
 KnightSword:
 	ReloadDelay: 30
 	Range: 1c512
@@ -85,3 +85,15 @@ KnightSword:
 			Heavy: 20
 			Concrete: 20
 		DamageTypes: Prone50Percent, TriggerProne, RippedApartDeath
+
+CarTire:
+	ValidTargets: Ground, Trees
+	Range: 5c0
+	Projectile: Bullet
+		Speed: 48, 128
+		LaunchAngle: 96, 160
+		Image: tire
+		Shadow: true
+		BounceCount: 3
+		BounceRangeModifier: 66
+		InvalidBounceTerrain: Water

@@ -78,6 +78,9 @@ MonsterTruck:
 		Actor: MonsterTruck.Husk
 		OwnerType: InternalName
 		EffectiveOwnerFromOwner: true
+	ThrowsShrapnel@Tire:
+		Weapons: CarTire
+		Pieces: 1, 1
 
 MonsterTruck.Husk:
 	Inherits: ^LightHusk
@@ -85,8 +88,16 @@ MonsterTruck.Husk:
 		Name: Monster Truck (Destroyed)
 	TransformOnCapture:
 		IntoActor: MonsterTruck
+	ThrowsParticle@tire1:
+		Anim: tire
+	ThrowsParticle@tire2:
+		Anim: tire
+	ThrowsParticle@tire3:
+		Anim: tire
+	ThrowsParticle@tire4:
+		Anim: tire
 	RenderSprites:
-		Image: monstertruck
+		Image: monstertruck.husk
 		PlayerPalette: playerremap
 	WithIdleOverlay@Burns:
 		Palette: terrain
