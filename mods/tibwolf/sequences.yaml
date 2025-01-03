@@ -159,3 +159,8 @@ windturbine:
 		Filename: jeepicnh.tem
 		AddExtension: False
 		Offset: 0,0
+
+smoketest:
+	small_frag:
+		Filename: smoketest.png
+		Length: *

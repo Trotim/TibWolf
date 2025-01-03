@@ -63,7 +63,7 @@ CatapultRock:
 			Concrete: 75
 		DamageTypes: Prone50Percent, TriggerProne, SmallExplosionDeath
 	Warhead@3Eff: CreateEffect
-		Explosions: poof
+		Image: smoketest
 		ImpactSounds: xplosml2.aud
 
 CatapultRockElite:
