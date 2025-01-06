@@ -161,6 +161,6 @@ windturbine:
 		Offset: 0,0
 
 smoketest:
-	small_frag:
+	test1:
 		Filename: smoketest.png
 		Length: *
