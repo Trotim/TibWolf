@@ -1,0 +1,146 @@
+{ "frames": {
+   "monstertruck_husk01 0.png": {
+    "frame": { "x": 0, "y": 0, "w": 28, "h": 23 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 18, "y": 19, "w": 28, "h": 23 },
+    "sourceSize": { "w": 64, "h": 64 },
+    "duration": 100
+   },
+   "monstertruck_husk01 1.png": {
+    "frame": { "x": 28, "y": 0, "w": 28, "h": 23 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 18, "y": 19, "w": 28, "h": 23 },
+    "sourceSize": { "w": 64, "h": 64 },
+    "duration": 100
+   },
+   "monstertruck_husk01 2.png": {
+    "frame": { "x": 56, "y": 0, "w": 28, "h": 23 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 18, "y": 19, "w": 28, "h": 23 },
+    "sourceSize": { "w": 64, "h": 64 },
+    "duration": 100
+   },
+   "monstertruck_husk01 3.png": {
+    "frame": { "x": 84, "y": 0, "w": 28, "h": 23 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 18, "y": 19, "w": 28, "h": 23 },
+    "sourceSize": { "w": 64, "h": 64 },
+    "duration": 100
+   },
+   "monstertruck_husk01 4.png": {
+    "frame": { "x": 0, "y": 23, "w": 28, "h": 23 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 18, "y": 19, "w": 28, "h": 23 },
+    "sourceSize": { "w": 64, "h": 64 },
+    "duration": 100
+   },
+   "monstertruck_husk01 5.png": {
+    "frame": { "x": 28, "y": 23, "w": 28, "h": 23 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 18, "y": 19, "w": 28, "h": 23 },
+    "sourceSize": { "w": 64, "h": 64 },
+    "duration": 100
+   },
+   "monstertruck_husk01 6.png": {
+    "frame": { "x": 56, "y": 23, "w": 28, "h": 23 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 18, "y": 19, "w": 28, "h": 23 },
+    "sourceSize": { "w": 64, "h": 64 },
+    "duration": 100
+   },
+   "monstertruck_husk01 7.png": {
+    "frame": { "x": 84, "y": 23, "w": 28, "h": 23 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 18, "y": 19, "w": 28, "h": 23 },
+    "sourceSize": { "w": 64, "h": 64 },
+    "duration": 100
+   },
+   "monstertruck_husk01 8.png": {
+    "frame": { "x": 0, "y": 46, "w": 28, "h": 23 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 18, "y": 19, "w": 28, "h": 23 },
+    "sourceSize": { "w": 64, "h": 64 },
+    "duration": 100
+   },
+   "monstertruck_husk01 9.png": {
+    "frame": { "x": 28, "y": 46, "w": 28, "h": 23 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 18, "y": 19, "w": 28, "h": 23 },
+    "sourceSize": { "w": 64, "h": 64 },
+    "duration": 100
+   },
+   "monstertruck_husk01 10.png": {
+    "frame": { "x": 56, "y": 46, "w": 28, "h": 23 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 18, "y": 19, "w": 28, "h": 23 },
+    "sourceSize": { "w": 64, "h": 64 },
+    "duration": 100
+   },
+   "monstertruck_husk01 11.png": {
+    "frame": { "x": 84, "y": 46, "w": 28, "h": 23 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 18, "y": 19, "w": 28, "h": 23 },
+    "sourceSize": { "w": 64, "h": 64 },
+    "duration": 100
+   },
+   "monstertruck_husk01 12.png": {
+    "frame": { "x": 0, "y": 69, "w": 28, "h": 23 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 18, "y": 19, "w": 28, "h": 23 },
+    "sourceSize": { "w": 64, "h": 64 },
+    "duration": 100
+   },
+   "monstertruck_husk01 13.png": {
+    "frame": { "x": 28, "y": 69, "w": 28, "h": 23 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 18, "y": 19, "w": 28, "h": 23 },
+    "sourceSize": { "w": 64, "h": 64 },
+    "duration": 100
+   },
+   "monstertruck_husk01 14.png": {
+    "frame": { "x": 56, "y": 69, "w": 28, "h": 23 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 18, "y": 19, "w": 28, "h": 23 },
+    "sourceSize": { "w": 64, "h": 64 },
+    "duration": 100
+   },
+   "monstertruck_husk01 15.png": {
+    "frame": { "x": 84, "y": 69, "w": 28, "h": 23 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 18, "y": 19, "w": 28, "h": 23 },
+    "sourceSize": { "w": 64, "h": 64 },
+    "duration": 100
+   }
+ },
+ "meta": {
+  "app": "https://www.aseprite.org/",
+  "version": "1.3.10.1-x64",
+  "image": "monstertruck_husk01-sheet.png",
+  "format": "RGBA8888",
+  "size": { "w": 112, "h": 92 },
+  "scale": "1",
+  "frameTags": [
+  ],
+  "layers": [
+   { "name": "Layer", "opacity": 255, "blendMode": "normal" }
+  ],
+  "slices": [
+  ]
+ }
+}
