@@ -351,6 +351,8 @@ knight:
 	HitShape:
 		Type: Circle
 			Radius: 256
+	CustomRadarColor:
+		Color: FFFF00
 
 windturbine:
 	Inherits: ^BaseBuilding
