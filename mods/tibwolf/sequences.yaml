@@ -164,3 +164,20 @@ smoketest:
 	test1:
 		Filename: smoketest.png
 		Length: *
+
+armoredcarrier:
+	Defaults:
+		Filename: armoredcarrier.png
+		Facings: -8
+		Stride: 12
+		Tick: 80
+		Scale: 0.75
+	idle:
+		Start: 0
+		Length: 1
+	move:
+		Start: 0
+		Length: 6
+	icon:
+		Filename: catapult_icon.png
+		Facings: 1

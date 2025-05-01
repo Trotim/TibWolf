@@ -351,8 +351,6 @@ knight:
 	HitShape:
 		Type: Circle
 			Radius: 256
-	CustomRadarColor:
-		Color: FFFF00
 
 windturbine:
 	Inherits: ^BaseBuilding
@@ -389,3 +387,54 @@ windturbine:
 	Power:
 		Amount: 55
 	ScalePowerWithHealth:
+
+armoredcarrier:
+	Inherits: ^Vehicle
+	Inherits@EXPERIENCE: ^GainsExperience
+	Inherits@CLOAK: ^AcceptsCloakCrate
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	RenderSprites:
+		Image: armoredcarrier
+		PlayerPalette: playerremap
+	Buildable:
+		Queue: Vehicle.GDI,Vehicle.Nod
+		BuildPaletteOrder: 35
+		Prerequisites: vehicleproduction
+		Description: Chunky cubey boy.\n Strong vs something\n Weak vs other things
+		IconPalette: playerremap
+		IconPaletteIsPlayerPalette: true
+	Valued:
+		Cost: 1200
+	Tooltip:
+		Name: Armored Carrier
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
+	Health:
+		HP: 90000
+	Repairable:
+		HpPerStep: 3000
+	Armor:
+		Type: Heavy
+	Mobile:
+		Speed: 96
+	RevealsShroud:
+		Range: 8c0
+	Armament:
+		Weapon: BoatMissile
+		Name: primary
+		LocalOffset: 0,0,256
+		FireDelay: 0
+	AttackFrontal:
+		Armaments: primary
+		TargetFrozenActors: True
+		ForceFireIgnoresActors: True
+		Voice: Attack
+		FacingTolerance: 0
+	AttackMove:
+		Voice: Attack
+	WithMuzzleOverlay:
+	WithFacingSpriteBody:
+	WithMoveAnimation:
+		MoveSequence: move
+	WithDamageOverlay:
+		Palette: terrain
