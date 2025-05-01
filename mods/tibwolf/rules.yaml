@@ -41,11 +41,17 @@ MonsterTruck:
 		Queue: Vehicle.GDI,Vehicle.Nod
 		BuildPaletteOrder: 35
 		Prerequisites: vehicleproduction
-		Description: Sturdy anti-infantry vehicle.\n Strong vs Infantry\n Weak vs Tanks
+		Description: MonsterTruck.description
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Monster Truck
+		Name: MonsterTruck.name
+	Encyclopedia:
+		Description: MonsterTruck.encyclopedia
+		Order: 180
+		Category: Vehicles
+		Scale: 3
+		PreviewOwner: NOD
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:

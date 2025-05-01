@@ -112,6 +112,7 @@ ChromeLayout:
 	cnc|chrome/mainmenu.yaml
 	cnc|chrome/mainmenu-prompts.yaml
 	cnc|chrome/playerprofile.yaml
+	cnc|chrome/encyclopedia.yaml
 	cnc|chrome/multiplayer-browser.yaml
 	cnc|chrome/multiplayer-browserpanels.yaml
 	cnc|chrome/multiplayer-createserver.yaml
@@ -166,6 +167,7 @@ FluentMessages:
 	cnc|fluent/chrome.ftl
 	cnc|fluent/hotkeys.ftl
 	cnc|fluent/rules.ftl
+	tibwolf|fluent/rules.ftl
 	
 AllowUnusedFluentMessagesInExternalPackages: true
 
