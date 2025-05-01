@@ -15,7 +15,7 @@ grai:
 	Selectable:
 		Bounds: 1024,1536, 0,256
 		DecorationBounds: 1024,1536, 0,256
-	Explodes:
+	FireWarheadsOnDeath:
 		Weapon: TiberiumExplosion
 	SpawnActorOnDeath:
 		Actor: grai.Husk
@@ -78,7 +78,7 @@ MonsterTruck:
 		Actor: MonsterTruck.Husk
 		OwnerType: InternalName
 		EffectiveOwnerFromOwner: true
-	ThrowsShrapnel@Tire:
+	FireProjectilesOnDeath@Tire:
 		Weapons: CarTire
 		Pieces: 1, 1
 
