@@ -115,7 +115,7 @@ knight:
 		Facings: -8
 		Stride: 13
 		Tick: 80
-		Scale: 1.0
+		Scale: 0.5
 	stand:
 		Start: 0
 		Length: 1
@@ -180,4 +180,24 @@ armoredcarrier:
 		Length: 6
 	icon:
 		Filename: catapult_icon.png
+		Facings: 1
+		
+biker:
+	Defaults:
+		Filename: biker.png
+		Facings: -8
+		Stride: 14
+		Tick: 80
+		Scale: 0.75
+	idle:
+		Start: 0
+		Length: 1
+	move:
+		Start: 1
+		Length: 1
+	shoot:
+		Start: 2
+		Length: 5
+	icon:
+		Filename: biker_icon.png
 		Facings: 1

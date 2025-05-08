@@ -320,6 +320,7 @@ knight:
 		Speed: 96
 		Voice: Move
 		AlwaysTurnInPlace: true
+		SharesCell: true
 	Selectable:
 		Bounds: 1024, 1024
 	Targetable:
@@ -438,3 +439,55 @@ armoredcarrier:
 		MoveSequence: move
 	WithDamageOverlay:
 		Palette: terrain
+
+
+Biker:
+	Inherits: ^Vehicle
+	Inherits@EXPERIENCE: ^GainsExperience
+	Inherits@CLOAK: ^AcceptsCloakCrate
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	RenderSprites:
+		Image: biker
+		PlayerPalette: playerremap
+	Buildable:
+		Queue: Vehicle.GDI,Vehicle.Nod
+		BuildPaletteOrder: 35
+		Prerequisites: vehicleproduction
+		Description: Biker.description
+	Valued:
+		Cost: 300
+	Tooltip:
+		Name: Biker.name
+	Encyclopedia:
+		Description: Biker.encyclopedia
+		Order: 180
+		Category: Vehicles
+		Scale: 3
+		PreviewOwner: NOD
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
+	Health:
+		HP: 11000
+	Repairable:
+		HpPerStep: 1000
+	Armor:
+		Type: Light
+	Mobile:
+		TurnSpeed: 40
+		Speed: 192
+		Locomotor: wheeled
+	RevealsShroud:
+		Range: 8c0
+	Armament:
+		Weapon: Shotgun
+		LocalOffset: 171,0,85
+	AttackFrontal:
+		Voice: Attack
+		FacingTolerance: 0
+	WithFacingSpriteBody:
+	WithDamageOverlay:
+		Palette: terrain
+	WithMoveAnimation:
+		MoveSequence: move
+	WithAttackAnimation:
+		Sequence: shoot
