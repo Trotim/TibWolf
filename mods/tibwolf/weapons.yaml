@@ -9,13 +9,13 @@ MachineGunMTruck:
 Shotgun:
 	Inherits: ^LightMG
 	Range: 4c0
-	ReloadDelay: 24
+	ReloadDelay: 32
 	Report: ff_shotgun_fire.wav
 	AfterFireSound: ff_shotgun_cock.wav
-	AfterFireSoundDelay: 8
+	AfterFireSoundDelay: 12
 	Warhead@1Dam: SpreadDamage
 		Spread: 256
-		Damage: 2000
+		Damage: 2250
 		InvalidTargets: Wall
 		Versus:
 			None: 150

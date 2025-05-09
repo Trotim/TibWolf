@@ -479,7 +479,7 @@ Biker:
 		Locomotor: wheeled
 	RevealsShroud:
 		Range: 8c0
-	Cloak@NORMAL:
+	Cloak@BIKER:
 		CloakStyle: Color
 		CloakedColor: 1010108C
 		InitialDelay: 80
@@ -487,6 +487,14 @@ Biker:
 		CloakSound: trans1.aud
 		UncloakSound: trans1.aud
 		UncloakOn: Attack, Unload, Dock, Damage, Heal
+		CloakedCondition: cloak-biker
+	WithIdleOverlay@CLOAK:
+		Sequence: idle
+		Image: pipsquare
+		Palette: playerremap
+		IsPlayerPalette: true
+		RequiresCondition: cloak-biker
+		IsDecoration: True
 	Armament:
 		Weapon: Shotgun
 		LocalOffset: 224,128,160

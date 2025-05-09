@@ -210,3 +210,7 @@ biker:
 	icon:
 		Filename: biker_icon.png
 		Facings: 1
+
+pipsquare:
+	idle:
+		Filename: icon_pip_square.png
