@@ -80,7 +80,7 @@ Player:
 		ExcessPowerIncreaseThreshold: 5
 		ConstructionYardTypes: fact
 		RefineryTypes: proc
-		PowerTypes: windturbine, nuk2
+		PowerTypes: windturbine, nuke, nuk2
 		BarracksTypes: pyle, hand
 		VehiclesFactoryTypes: weap, afld
 		ProductionTypes: pyle, hand, weap, afld, hpad
@@ -128,13 +128,11 @@ Player:
 		RequiresCondition: enable-newbot-ai
 		UnitQueues: Vehicle.Nod, Vehicle.GDI, Infantry.Nod, Infantry.GDI, Aircraft.Nod, Aircraft.GDI
 		UnitsToBuild:
-			shotgunner: 65
 			e2: 25
 			e3: 40
 			e4: 15
 			e5: 15
 			harv: 10
-			mtrk: 15
 			bike: 20
 			ltnk: 25
 			ftnk: 10
@@ -146,8 +144,10 @@ Player:
 			htnk: 25
 			heli: 5
 			orca: 5
+			shotgunner: 65
+			mtrk: 15
 			knight: 50
-			catapult: 15
+			biker: 15
 		UnitLimits:
 			harv: 8
 	McvManagerBotModule:
