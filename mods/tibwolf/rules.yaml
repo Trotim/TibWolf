@@ -80,6 +80,8 @@ MonsterTruck:
 	WithSpriteTurret:
 	WithDamageOverlay:
 		Palette: terrain
+	Cloak:
+		CloakStyle: Color
 	SpawnActorOnDeath:
 		Actor: MonsterTruck.Husk
 		OwnerType: InternalName
@@ -240,9 +242,9 @@ catapult:
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
-		HP: 90000
+		HP: 45000
 	Repairable:
-		HpPerStep: 3000
+		HpPerStep: 2250
 	Armor:
 		Type: Heavy
 	Mobile:
@@ -300,9 +302,9 @@ knight:
 	OwnerLostAction:
 		Action: Kill
 	Health:
-		HP: 45000
+		HP: 15000
 	Armor:
-		Type: Light
+		Type: None
 	Buildable:
 		Queue: Infantry.GDI, Infantry.Nod
 		BuildPaletteOrder: 15
@@ -316,13 +318,12 @@ knight:
 	RevealsShroud:
 		Range: 6c0
 	Mobile:
-		Locomotor: critter
+		Locomotor: foot
 		Speed: 96
 		Voice: Move
 		AlwaysTurnInPlace: true
-		SharesCell: true
 	Selectable:
-		Bounds: 1024, 1024
+		Bounds: 512, 512
 	Targetable:
 		TargetTypes: Ground, Creep
 	HiddenUnderFog:
@@ -351,7 +352,7 @@ knight:
 		VoiceSet: DinoVoice
 	HitShape:
 		Type: Circle
-			Radius: 256
+			Radius: 128
 
 windturbine:
 	Inherits: ^BaseBuilding
@@ -473,14 +474,23 @@ Biker:
 	Armor:
 		Type: Light
 	Mobile:
-		TurnSpeed: 40
+		TurnSpeed: 32
 		Speed: 192
 		Locomotor: wheeled
 	RevealsShroud:
 		Range: 8c0
+	Cloak@NORMAL:
+		CloakStyle: Color
+		CloakedColor: 1010108C
+		InitialDelay: 80
+		CloakDelay: 80
+		CloakSound: trans1.aud
+		UncloakSound: trans1.aud
+		UncloakOn: Attack, Unload, Dock, Damage, Heal
 	Armament:
 		Weapon: Shotgun
-		LocalOffset: 171,0,85
+		LocalOffset: 224,128,160
+		MuzzleSequence: muzzle
 	AttackFrontal:
 		Voice: Attack
 		FacingTolerance: 0
@@ -491,3 +501,4 @@ Biker:
 		MoveSequence: move
 	WithAttackAnimation:
 		Sequence: shoot
+	WithMuzzleOverlay:
