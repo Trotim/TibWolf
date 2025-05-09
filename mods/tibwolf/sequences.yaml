@@ -7,7 +7,6 @@ grai:
 		UseTilesetExtension: true
 		TilesetOverrides:
 			WINTER: TEMPERAT
-			JUNGLE: TEMPERAT
 			SNOW: TEMPERAT
 		Length: *
 		Offset: -1,-2
@@ -30,9 +29,12 @@ monstertruck:
 		Scale: 0.5
 		Facings: 32
 	muzzle:
-		Filename: minigun.shp
-		Length: 6
-		Facings: 8
+		Filename: muzzleflash.png
+		Facings: -16
+		Start: 1
+		Length: 2
+		Stride: 3
+		Tick: 50
 	icon:
 		Filename: jeepicnh.tem
 		AddExtension: False
@@ -185,8 +187,8 @@ armoredcarrier:
 biker:
 	Defaults:
 		Filename: biker.png
-		Facings: -8
-		Stride: 14
+		Facings: -16
+		Stride: 7
 		Tick: 80
 		Scale: 0.75
 	idle:
@@ -198,6 +200,13 @@ biker:
 	shoot:
 		Start: 2
 		Length: 5
+	muzzle:
+		Filename: muzzleflash.png
+		Facings: -16
+		Start: 0
+		Length: 3
+		Stride: 3
+		Tick: 50
 	icon:
 		Filename: biker_icon.png
 		Facings: 1
