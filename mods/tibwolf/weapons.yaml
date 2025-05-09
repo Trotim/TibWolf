@@ -18,11 +18,11 @@ Shotgun:
 		Damage: 2000
 		InvalidTargets: Wall
 		Versus:
-			None: 125
-			Wood: 40
-			Light: 60
-			Heavy: 20
-			Concrete: 30
+			None: 150
+			Wood: 30
+			Light: 40
+			Heavy: 10
+			Concrete: 10
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: piff
