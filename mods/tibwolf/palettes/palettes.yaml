@@ -39,11 +39,6 @@
 		Tileset: TEMPERAT
 		Filename: temperat.pal
 		ShadowIndex: 4
-	PaletteFromFile@staticterrain-jungle:
-		Name: staticterrain
-		Tileset: JUNGLE
-		Filename: jungle.pal
-		ShadowIndex: 4
 	PaletteFromFile@chrome:
 		Name: chrome
 		Filename: temperat.pal
