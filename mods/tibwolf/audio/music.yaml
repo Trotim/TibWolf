@@ -35,3 +35,31 @@ repairingaplasmaconduit: Repairing A Plasma Conduit
 upagainstthewall: Against The Wall
 	Extension: ogg
 	VolumeModifier: 0.7
+
+basicmetal5: Basic Metal 5
+	Extension: ogg
+	VolumeModifier: 0.7
+basicmetal29: Basic Metal 29
+	Extension: ogg
+	VolumeModifier: 0.7
+brittlepicks: Brittle Picks
+	Extension: ogg
+	VolumeModifier: 0.7
+funkadelic: Funkadelic
+	Extension: ogg
+	VolumeModifier: 0.7
+headingintothezone: Heading Into The Zone
+	Extension: ogg
+	VolumeModifier: 0.7
+pointlesstoolimitation: Pointless Tool Imitation
+	Extension: ogg
+	VolumeModifier: 0.7
+spookyorange: Spooky Orange
+	Extension: ogg
+	VolumeModifier: 0.7
+spyvsjam: Spy vs Jam
+	Extension: ogg
+	VolumeModifier: 0.7
+wallofanger: Wall of Anger
+	Extension: ogg
+	VolumeModifier: 0.7
